@@ -499,71 +499,62 @@ p {
 #copyright:hover::after {
     width: 100%; /* Now "100%" means "100% of the text", not the screen */
 }
-/* --- MOBILE RESPONSIVENESS FIX --- */
+/* --- MOBILE FIXES --- */
+/* This only activates if the screen is small (like a phone) */
 @media screen and (max-width: 768px) {
 
-    /* 1. Fix the Header Menu */
-    .hcontent {
-        flex-wrap: wrap; /* Allow items to drop to next line */
-        height: auto;    /* Let the height grow with the items */
-        padding-bottom: 20px;
-        background-size: cover; /* Ensure wood texture covers area */
-    }
-    
-    #a, #f {
-        margin: 0; /* Remove the big left/right margins on mobile */
-    }
-
-    .item {
-        font-size: 12px; /* Make text slightly smaller to fit */
-        margin: 5px;     /* Give them breathing room */
-    }
-
-    /* 2. Fix the Hero Section (Image + Sidebar) */
-    .hero-section {
-        flex-direction: column; /* Stack them vertically instead of side-by-side */
-    }
-
-    .cave-container {
-        width: 100%;  /* Full width */
-        margin-right: 0;
-        height: 300px; /* Adjust height for mobile */
-        margin-bottom: 20px; /* Space between image and sidebar */
-    }
-
-    .temp {
-        margin-left: 0; /* Remove left margin */
-        padding: 0 20px; /* Add padding so text doesn't touch screen edge */
-        width: 100%;
-        box-sizing: border-box; /* Ensures padding doesn't break width */
-    }
-
-    /* 3. Fix the Sidebar/Pulse items */
-    .pulse-item {
-        justify-content: flex-start; /* Align items to left */
-    }
-    
-    /* 4. Fix the Footer (The Green Block Issue) */
+    /* 1. Fix the Footer (The Green Box Issue) */
     .footer {
-        height: auto; /* CRITICAL: Let footer grow as tall as it needs to be */
-        background-size: cover; /* Stretch the wood image to cover the new height */
-        padding-bottom: 30px; /* Add space at the bottom */
+        /* Unlocks the height so it can grow as tall as the text needs */
+        height: auto !important; 
+        min-height: 280px;
+        
+        /* Adds space so text doesn't hit the bottom edge */
+        padding-bottom: 50px; 
+        
+        /* Stretches the wood image to cover the whole area, no matter how tall */
+        background-size: cover !important; 
+        background-position: center;
     }
 
     .footer-row {
-        flex-direction: column; /* Stack the 3 footer columns vertically */
-        align-items: center;    /* Center everything */
+        /* Stacks the 3 columns on top of each other so they fit */
+        flex-direction: column; 
+        align-items: center;
         text-align: center;
-        gap: 20px; /* Space between the columns */
     }
 
     .footer-col {
         width: 100%;
-        border-bottom: 1px solid rgba(245, 235, 224, 0.2); /* faint line between sections */
+        margin-bottom: 20px;
+    }
+
+    /* 2. Fix the Header (Menu cramping) */
+    .hcontent {
+        flex-wrap: wrap; /* Allows menu items to drop to next line */
+        height: auto;
+        padding-bottom: 20px;
     }
     
-    /* Adjust input field on mobile */
-    #email {
-        width: 60%;
+    .item {
+        margin: 5px 10px; /* Gives links breathing room */
+    }
+
+    /* 3. Fix the Hero Section (Squashed images) */
+    .hero-section {
+        flex-direction: column;
+    }
+    
+    .cave-container {
+        width: 100%; /* Full width for the image */
+        margin-right: 0;
+        margin-bottom: 20px;
+    }
+    
+    .temp {
+        margin-left: 0;
+        width: 100%;
+        padding: 0 15px; /* Keeps text inside the screen edges */
+        box-sizing: border-box;
     }
 }
