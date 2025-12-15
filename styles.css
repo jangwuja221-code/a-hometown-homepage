@@ -6,29 +6,35 @@ body{
     
 }
 
-.hcontent{
-    display:flex;
-    flex-direction:row;
-    justify-content:space-evenly;
+/* Update this section */
+.hcontent {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap; /* CRITICAL: Allows items to drop to next line on small screens */
+    justify-content: center; /* Centers items instead of space-evenly for better mobile look */
+    align-items: center;
+    gap: 38px; /* Adds space between items without using margins */
+    
     background-image: url("images/h1image.png");
     color: #f5ebe0;
-    height:0px;
-    background-size:100% 100%;
+    width: 100%;
+    min-height: 115px; /* Give it real height, do not use height: 0px */
+    
+    background-size: cover; /* Ensures image covers area without distortion */
     background-repeat: no-repeat;
-    padding-bottom: 45px;
-    padding-top:45px;
     background-position: center;
-   
+    padding: 20px 0; /* Add top/bottom padding */
 }
+
 .item {
-    margin: -8px;
     font-size: 15px;
+    margin: 5px 10px; /* Safe spacing */
+    text-align: center;
 }
-#a {
-    margin-left:8vw;
-}
-#f {
-    margin-right:8vw;
+
+/* Remove the specific margins causing misalignment on mobile */
+#a, #f {
+    margin: 0; 
 }
 /* --- 1. THE CONTAINER SETUP --- */
 .cave-container {
@@ -231,10 +237,15 @@ p {
 }
 .footer {
     background-image: url("images/footer.png");
-    background-size: 100% 100%;
-    height: auto; 
-    min-height: 280px;
+    background-size: cover; /* CHANGE THIS: Covers the entire footer area */
+    background-position: center bottom; /* Anchors image to bottom */
+    background-repeat: no-repeat;
+    
+    width: 100%;
+    min-height: 280px; 
+    padding-bottom: 20px; /* Ensure space at bottom */
     margin-top: -4px;
+    overflow: hidden; /* Prevents green background from leaking */
 }
 .footer-row{
     display:flex;
@@ -503,10 +514,40 @@ p {
 #copyright:hover::after {
     width: 100%; /* Now "100%" means "100% of the text", not the screen */
 }
+/* --- MOBILE RESPONSIVENESS --- */
 @media screen and (max-width: 768px) {
-    /* On phone, we just ensure things don't touch the edges */
-    .cave-container { margin-right: 0; height: 250px; }
-    .temp { padding-left: 0; margin-top: 20px; }
-    #a { margin-left: 5vw; } /* Slightly smaller gap on phone */
-    #f { margin-right: 5vw; }
+    
+    /* 1. Stack the header items on mobile */
+    .hcontent {
+        flex-direction: column; /* Stack items vertically */
+        height: auto;
+        padding-top: 20px;
+        padding-bottom: 20px;
+        background-size: cover;
+    }
+
+    /* 2. Adjust font sizes for mobile */
+    .item {
+        font-size: 18px; /* Make text readable on touch */
+        margin: 5px 0;
+    }
+
+    /* 3. Fix the center title on mobile */
+    #c {
+        font-size: 24px;
+        margin-top: 10px;
+        margin-bottom: 10px;
+    }
+
+    /* 4. Ensure Footer columns stack nicely */
+    .footer-row {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+
+    .footer-col {
+        width: 90%; /* Take up most of the screen width */
+        margin-bottom: 20px;
+    }
 }
