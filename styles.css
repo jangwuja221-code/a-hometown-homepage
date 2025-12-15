@@ -3,7 +3,7 @@ body{
     background-color:#24421D;
     color:#f5ebe0; 
     font-family: 'Montserrat', sans-serif;
-
+    
 }
 
 .hcontent{
@@ -13,23 +13,22 @@ body{
     background-image: url("images/h1image.png");
     color: #f5ebe0;
     height:0px;
-    
     background-size:100% 100%;
     background-repeat: no-repeat;
     padding-bottom: 45px;
     padding-top:45px;
     background-position: center;
-    
+   
 }
 .item {
     margin: -8px;
     font-size: 15px;
 }
 #a {
-    margin-left: 100px;
+    margin-left:8vw;
 }
 #f {
-    margin-right:100px;
+    margin-right:8vw;
 }
 /* --- 1. THE CONTAINER SETUP --- */
 .cave-container {
@@ -41,6 +40,11 @@ body{
     border-radius: 20px;
     margin-right: 20px;
     z-index: 1;
+}
+.hero-section {
+    display: flex;
+    flex-wrap: wrap; /* CRITICAL: Allows stacking on mobile without overlapping */
+    padding: 20px;
 }
 
 /* --- 2. THE BACKGROUND IMAGE --- */
@@ -141,8 +145,10 @@ body{
 .hero-section{
     display:flex;
 }
-.temp{
-    margin-left:40px;
+.temp {
+    flex: 1; /* Takes up 1 part of width */
+    min-width: 250px;
+    padding-left: 20px; /* Use padding instead of margin for safety */
 }
 #h ,#p,#r{
     font-size:45px;
@@ -186,8 +192,9 @@ p {
 /* Container */
 .gallery-container {
     display: flex;
-    width: 100%;
-    height: 350px;
+    flex-wrap: wrap;
+    height: auto; 
+    min-height: 350px;
     gap: 10px; /* Space between images */
     padding: 0 10px;
     box-sizing: border-box;
@@ -197,14 +204,14 @@ p {
 
 /* The Images (Default State) */
 .gallery-img {
-    height: 100%;
+    height: 300px;
     
     /* This is the fix: */
     flex-grow: 1;  /* All images start equal */
     flex-shrink: 1; /* All images are allowed to shrink */
     flex-basis: 0; /* Important: Tells browser to ignore image width and fit to container */
     
-    min-width: 0; /* Allows image to get very narrow if needed */
+    min-width: 200px; /* Allows image to get very narrow if needed */
     
     object-fit: cover;
     border-radius: 20px;
@@ -218,31 +225,28 @@ p {
     filter: brightness(1.1);
 }
 
-/* Mobile Adjustments */
-@media screen and (max-width: 768px) {
-    .gallery-container {
-        flex-direction: column;
-        height: 600px;
-    }
-    /* Reset flex logic for vertical stacking */
-    .gallery-img {
-        width: 100%;
-    }   
-}
+
 #activities {
     text-align:center;
 }
 .footer {
     background-image: url("images/footer.png");
     background-size: 100% 100%;
-    height:280px;
+    height: auto; 
+    min-height: 280px;
     margin-top: -4px;
 }
 .footer-row{
     display:flex;
+    flex-wrap: wrap;
     justify-content: space-around;
     border-bottom: 1px solid #f5ebe0;
     
+}
+.footer-col {
+    min-width: 250px; /* Ensures column is readable */
+    padding: 10px;
+    transition: all 0.4s ease;
 }
 .fb-icon,.x-icon,.insta-icon {
     height:30px;
@@ -499,62 +503,10 @@ p {
 #copyright:hover::after {
     width: 100%; /* Now "100%" means "100% of the text", not the screen */
 }
-/* --- MOBILE FIXES --- */
-/* This only activates if the screen is small (like a phone) */
 @media screen and (max-width: 768px) {
-
-    /* 1. Fix the Footer (The Green Box Issue) */
-    .footer {
-        /* Unlocks the height so it can grow as tall as the text needs */
-        height: auto !important; 
-        min-height: 280px;
-        
-        /* Adds space so text doesn't hit the bottom edge */
-        padding-bottom: 50px; 
-        
-        /* Stretches the wood image to cover the whole area, no matter how tall */
-        background-size: cover !important; 
-        background-position: center;
-    }
-
-    .footer-row {
-        /* Stacks the 3 columns on top of each other so they fit */
-        flex-direction: column; 
-        align-items: center;
-        text-align: center;
-    }
-
-    .footer-col {
-        width: 100%;
-        margin-bottom: 20px;
-    }
-
-    /* 2. Fix the Header (Menu cramping) */
-    .hcontent {
-        flex-wrap: wrap; /* Allows menu items to drop to next line */
-        height: auto;
-        padding-bottom: 20px;
-    }
-    
-    .item {
-        margin: 5px 10px; /* Gives links breathing room */
-    }
-
-    /* 3. Fix the Hero Section (Squashed images) */
-    .hero-section {
-        flex-direction: column;
-    }
-    
-    .cave-container {
-        width: 100%; /* Full width for the image */
-        margin-right: 0;
-        margin-bottom: 20px;
-    }
-    
-    .temp {
-        margin-left: 0;
-        width: 100%;
-        padding: 0 15px; /* Keeps text inside the screen edges */
-        box-sizing: border-box;
-    }
+    /* On phone, we just ensure things don't touch the edges */
+    .cave-container { margin-right: 0; height: 250px; }
+    .temp { padding-left: 0; margin-top: 20px; }
+    #a { margin-left: 5vw; } /* Slightly smaller gap on phone */
+    #f { margin-right: 5vw; }
 }
