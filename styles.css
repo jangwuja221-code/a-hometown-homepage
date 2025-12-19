@@ -1,59 +1,91 @@
 body{
-    margin: 0px;
+    margin: 0rem;
     background-color:#24421D;
     color:#f5ebe0; 
-    font-family: 'Montserrat', sans-serif;
-    
+    font-family: 'Montserrat', sans-serif; 
+    min-height:100vh;
+    display: flex;
+    flex-direction: column;
+}     
+
+html {
+    font-size:62.5%;
 }
 
-/* Update this section */
+
 .hcontent {
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap; /* CRITICAL: Allows items to drop to next line on small screens */
-    justify-content: center; /* Centers items instead of space-evenly for better mobile look */
-    align-items: center;
-    gap: 38px; /* Adds space between items without using margins */
-    
     background-image: url("images/h1image.png");
     color: #f5ebe0;
     width: 100%;
-    min-height: 115px; /* Give it real height, do not use height: 0px */
+    min-height:5rem;
     
-    background-size: cover; /* Ensures image covers area without distortion */
+    background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
-    padding: 20px 0; /* Add top/bottom padding */
+    padding: 2rem 0rem; 
 }
 
-.item {
-    font-size: 15px;
-    margin: 5px 10px; /* Safe spacing */
+.navbar-main {
+    display: flex;
+    justify-content: space-between; /* Pushes groups to the edges */
+    align-items: center;           /* Vertical centering */
+    width: 100%;
+    padding: 1rem 5%;              /* Adjust side padding to match your background */
+    box-sizing: border-box;
+}
+
+.nav-side {
+    display: flex;
+    gap: 2rem;                     /* Horizontal space between links */
+    flex: 1;                       /* Crucial: makes both sides equal width */
+}
+
+.nav-side:last-child {
+    justify-content: center;     /* Aligns the right group to the far right */
+}
+.nav-side:first-child {
+    justify-content: center;     /* Aligns the right group to the far right */
+}
+
+
+.nav-center {
+    flex: 0 0 auto;                /* Prevents the title from being squeezed */
     text-align: center;
 }
 
-/* Remove the specific margins causing misalignment on mobile */
-#a, #f {
-    margin: 0; 
+.nav-center h2 {
+    font-size: 1.4rem;
+    white-space: nowrap;           /* Keeps title on one line */
+    margin: 0;
 }
-/* --- 1. THE CONTAINER SETUP --- */
+
+.item {
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: white;                  /* Matches your reference image */
+    cursor: pointer;
+}
+
+
+
+
 .cave-container {
     flex: 2;
-    min-width: 300px;
-    height: 400px;
+    min-width: 30rem;
+    min-height: 40rem;
     position: relative;
     overflow: hidden;
-    border-radius: 20px;
-    margin-right: 20px;
+    border-radius: 2rem;
+    margin-right: 2rem;
     z-index: 1;
 }
 .hero-section {
     display: flex;
-    flex-wrap: wrap; /* CRITICAL: Allows stacking on mobile without overlapping */
-    padding: 20px;
+    flex-wrap: wrap;
+    padding: 2rem;
 }
 
-/* --- 2. THE BACKGROUND IMAGE --- */
+
 .cave-background {
     position: absolute;
     top: 0;
@@ -109,7 +141,7 @@ body{
     left: 50%;
     transform: translate(-50%, -50%) scale(0); /* Hidden (shrunk) by default */
     
-    font-size: 80px; /* Big symbol */
+    font-size: 8rem; /* Big symbol */
     color: #fff; /* White core */
     z-index: 3;
     transition: all 0.5s cubic-bezier(0.68, -0.55, 0.265, 1.55); /* Bouncy pop-in */
@@ -135,7 +167,7 @@ body{
     height: 100%;
     display: flex;
     justify-content: center; /* Center the text */
-    padding-top: 20px; /* Push text to top like in video */
+    padding-top: 2rem; /* Push text to top like in video */
 }
 
 /* Make text glow white on hover */
@@ -144,8 +176,10 @@ body{
     text-shadow: 0 0 10px rgba(255,255,255,0.8);
 }
 #g {
-    margin-top:70px;
-    margin-left:50px;
+    margin-top:7rem;
+    margin-left:5rem;
+    font-size: 2rem;
+    text-shadow: 0 0 5px rgba(0,0,0,0.5);
        
 }
 .hero-section{
@@ -153,74 +187,74 @@ body{
 }
 .temp {
     flex: 1; /* Takes up 1 part of width */
-    min-width: 250px;
-    padding-left: 20px; /* Use padding instead of margin for safety */
+    min-width: 25rem;
+    padding-left: 2rem; /* Use padding instead of margin for safety */
 }
 #h ,#p,#r{
-    font-size:45px;
-    margin-top:-0.5px;
-    margin-bottom:-20px;
+    font-size:4.5rem;
+    margin-top:-0.05rem;
+    margin-bottom:-2rem;
     filter: sepia(100%) saturate(180%) hue-rotate(345deg) brightness(100%) contrast(100%); 
 }
 .pulse-item{
     display: flex;
     align-items: center; 
-    margin-top: 1px;
+    margin-top: 0.1rem;
     border-bottom: 1px solid rgba(245, 235, 224, 0.3);
-    padding: 2px 2px; 
-    border-radius: 12px; 
+    padding: 0.2rem 0.2rem; 
+    border-radius: 1.2rem; 
     transition: all 0.3s ease; 
     cursor: pointer;
 }
 
 
 #j,#n,#q,#s {
-    margin-top:-18px;
+    margin-top:-1.8rem;
 }
 #k {
-    margin-top:5px;
+    margin-top:0.5rem;
 }
 .cave-icon {
-    width: 50px;
-    height: 50px;
+    width: 5rem;
+    height:5rem;
     fill: #C49A6C;
-    margin-top:7px;
+    margin-top:0.7rem;
 }
 p {
-    font-size:17px;
+    font-size:1.7rem;
 }
 #sidebar {
-    font-size:20px;
+    font-size:2rem;
 }
 #p {
-    margin-top: 5px;
+    margin-top: 0.5rem;
 }
 /* Container */
 .gallery-container {
     display: flex;
     flex-wrap: wrap;
     height: auto; 
-    min-height: 350px;
-    gap: 10px; /* Space between images */
-    padding: 0 10px;
+    min-height: 35rem;
+    gap: 1rem; /* Space between images */
+    padding: 0 1rem;
     box-sizing: border-box;
-    margin-top: 20px;
+    margin-top: 2rem;
     /* Removed 'overflow: hidden' so we can see if they are dropping down */
 }
 
 /* The Images (Default State) */
 .gallery-img {
-    height: 300px;
+    height: 30rem;
     
     /* This is the fix: */
     flex-grow: 1;  /* All images start equal */
     flex-shrink: 1; /* All images are allowed to shrink */
     flex-basis: 0; /* Important: Tells browser to ignore image width and fit to container */
     
-    min-width: 200px; /* Allows image to get very narrow if needed */
+    min-width: 20rem; /* Allows image to get very narrow if needed */
     
     object-fit: cover;
-    border-radius: 20px;
+    border-radius: 2rem;
     cursor: pointer;
     transition: all 0.5s ease;
 }
@@ -234,34 +268,33 @@ p {
 
 #activities {
     text-align:center;
+    font-size:3rem;
 }
 .footer {
     background-image: url("images/footer.png");
-    background-size: cover; /* CHANGE THIS: Covers the entire footer area */
+    background-size:100% 100%; /* CHANGE THIS: Covers the entire footer area */
     background-position: center bottom; /* Anchors image to bottom */
-    background-repeat: no-repeat;
-    
+    background-repeat: no-repeat;  
     width: 100%;
-    min-height: 280px; 
-    padding-bottom: 20px; /* Ensure space at bottom */
-    margin-top: -4px;
+    min-height: auto; 
+    padding-bottom: 2rem; /* Ensure space at bottom */
+    margin-top: -0.4rem;
     overflow: hidden; /* Prevents green background from leaking */
 }
 .footer-row{
     display:flex;
-    flex-wrap: wrap;
-    justify-content: space-around;
+    justify-content: space-evenly;
     border-bottom: 1px solid #f5ebe0;
     
 }
 .footer-col {
-    min-width: 250px; /* Ensures column is readable */
-    padding: 10px;
+    min-width: 25rem; /* Ensures column is readable */
+    padding: 1rem;
     transition: all 0.4s ease;
 }
 .fb-icon,.x-icon,.insta-icon {
-    height:30px;
-    width:30px;
+    height:3rem;
+    width:3rem;
     fill: #C49A6C;
 }
 #email {
@@ -270,7 +303,7 @@ p {
 }
 #btn {
     background-color: #C49A6C;
-    margin-left: -5px;
+    margin-left: -0.5rem;
     border:1.3px solid #C49A6C;
 }
 
@@ -291,15 +324,15 @@ p {
 .pulse-item p#p, 
 .pulse-item p#r {
     margin: 0;
-    font-size: 30px; /* Adjusted size */
-    margin-right: 15px; /* Space between icon and text */
+    font-size: 3rem; /* Adjusted size */
+    margin-right: 1.5rem; /* Space between icon and text */
 }
 
 .pulse-item .cave-icon {
     margin: 0;
-    width: 40px;
-    height: 40px;
-    margin-right: 15px; /* Space between icon and text */
+    width: 4rem;
+    height: 4rem;
+    margin-right: 1.5rem; /* Space between icon and text */
 }
 
 /* Text adjustments */
@@ -318,8 +351,8 @@ p {
 /* When you hover over any column (Contact, Links, etc.), it floats up slightly */
 .footer-col {
     transition: all 0.4s ease;
-    padding: 15px; /* Adds invisible padding so the hover area is bigger */
-    border-radius: 15px; /* Smooth corners if we add a background later */
+    padding: 1.5rem; /* Adds invisible padding so the hover area is bigger */
+    border-radius: 1.5rem; /* Smooth corners if we add a background later */
 }
 
 .footer-col:hover {
@@ -332,8 +365,8 @@ p {
 .footer-col h3 {
     position: relative;
     display: flex;
-    padding-bottom: 5px;
-    margin-bottom: 15px;
+    padding-bottom: 0.5rem;
+    margin-bottom: 1.5rem;
 }
 
 /* Creates an invisible line that grows when you hover */
@@ -341,7 +374,7 @@ p {
     content: '';
     position: absolute;
     width: 0;
-    height: 2px;
+    height: 0.2rem;
     bottom: 0;
     left: 0;
     background-color: #C49A6C; /* Ogbunike Gold */
@@ -359,10 +392,13 @@ p {
     transition: color 0.3s ease;
     line-height: 1.6; /* Improves readability */
 }
+#footer-title {
+    font-size :1.8rem
+}
 
 .footer-col:hover p {
     color: #fff; /* Turns bright white when you look at the section */
-    text-shadow: 0 0 5px rgba(0,0,0,0.5); /* Adds a shadow so it pops off the wood */
+   text-shadow: 0 0 5px rgba(0,0,0,0.5); /* Adds a shadow so it pops off the wood */
 }
 
 /* --- RE-ADDING THE BUTTON & ICONS (Just in case) --- */
@@ -391,23 +427,15 @@ p {
 }
 /* --- HEADER HOVER EFFECTS --- */
 
-/* 1. Base Setup for the Links */
-.item {
-    position: relative; /* This is needed so the underline knows where to sit */
-    cursor: pointer;
-    padding-bottom: 8px; /* Adds space for the line to appear */
-    transition: all 0.3s ease; /* Smooth animation for everything */
-}
 
-/* 2. The Hover Action (Lift & Glow) */
-.item:hover {
+.item:hover,.nav-center:hover {
     transform: translateY(-3px); /* Floats up slightly */
     color: #C49A6C; /* Turns Gold */
     text-shadow: 0 0 15px rgba(196, 154, 108, 0.6); /* Adds a Gold Aura */
 }
 
 /* 3. The Magic Underline (Hidden by default) */
-.item::after {
+.item::after,.nav-center::after {
     content: '';
     position: absolute;
     bottom: 0;
@@ -423,7 +451,7 @@ p {
 }
 
 /* 4. Trigger the Line on Hover */
-.item:hover::after {
+.item:hover::after,.nav-center:hover::after {
     width: 80%; /* Grows to 80% of the text width */
 }
 
@@ -431,7 +459,9 @@ p {
 /* If you want the center "OGBUNIKE" title to be even bolder */
 #c {
     font-weight: 700;
-    letter-spacing: 1px;
+    letter-spacing: 0.1rem;
+    font-size:1.4rem;
+    margin-right:2rem
 }
 
 #c:hover {
@@ -445,7 +475,7 @@ p {
     position: relative;
     cursor: pointer;
     transition: all 0.3s ease;
-    padding-bottom: 5px; /* Space for the line */
+    padding-bottom: 0.5rem; /* Space for the line */
 }
 
 /* 1. The Text Glow */
@@ -463,7 +493,7 @@ p {
     left: 50%; /* Start in the middle */
     transform: translateX(-50%); /* Center alignment */
     width: 0; /* Invisible start */
-    height: 3px; /* Thickness */
+    height: 0.3rem; /* Thickness */
     background-color: #C49A6C; /* Gold */
     border-radius: 2px;
     transition: width 0.4s ease; /* Smooth expansion */
@@ -483,11 +513,11 @@ p {
     
     /* 2. This keeps it centered in the footer */
     margin: 0 auto; 
-    margin-top:20px;
+    margin-top:2rem;
     position: relative;
     cursor: pointer;
     transition: all 0.3s ease;
-    padding-bottom: 3px;
+    padding-bottom: 0.3rem;
 }
 
 /* 3. The Glow */
@@ -513,41 +543,4 @@ p {
 /* 5. Trigger */
 #copyright:hover::after {
     width: 100%; /* Now "100%" means "100% of the text", not the screen */
-}
-/* --- MOBILE RESPONSIVENESS --- */
-@media screen and (max-width: 768px) {
-    
-    /* 1. Stack the header items on mobile */
-    .hcontent {
-        flex-direction: column; /* Stack items vertically */
-        height: auto;
-        padding-top: 20px;
-        padding-bottom: 20px;
-        background-size: cover;
-    }
-
-    /* 2. Adjust font sizes for mobile */
-    .item {
-        font-size: 18px; /* Make text readable on touch */
-        margin: 5px 0;
-    }
-
-    /* 3. Fix the center title on mobile */
-    #c {
-        font-size: 24px;
-        margin-top: 10px;
-        margin-bottom: 10px;
-    }
-
-    /* 4. Ensure Footer columns stack nicely */
-    .footer-row {
-        flex-direction: column;
-        align-items: center;
-        text-align: center;
-    }
-
-    .footer-col {
-        width: 90%; /* Take up most of the screen width */
-        margin-bottom: 20px;
-    }
 }

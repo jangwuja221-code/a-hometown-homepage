@@ -1,0 +1,258 @@
+@media (max-width:74rem) {
+    html{
+        font-size:56.25%;
+    }
+    #c {
+        font-size:1.2rem;
+    }
+    #footer-title{
+        font-size:3rem;
+    }
+    #copyright {
+        font-size: 2rem;
+    }
+    #fcontent{
+        font-size: 1.5rem;
+    }
+    .fb-icon,.x-icon,.insta-icon {
+    height:4rem;
+    width:4rem;
+    }
+}
+@media (max-width:64rem) {
+    html{
+        font-size: 50%;
+    }
+    .hcontent {
+         width: 100%;
+         background-size:100% 100%;
+    }
+
+}
+@media (max-width:59rem) {
+    html{
+        font-size :45%;
+    }
+    .footer{
+        margin-bottom:0rem;
+        min-height: 20rem;
+        padding-bottom: 2rem;
+        margin-top:auto;
+    }
+    .hcontent {
+        min-height:15rem;
+    }
+    .nav-side, .nav-center {
+    display: flex;
+    justify-content: center;
+    margin-top: 4rem; 
+    }
+    
+    .item {
+    font-size: 1.8rem;
+    margin: 0.5rem 1rem; /* Safe spacing */
+    text-align: center;
+    }
+    .gallery-img {
+        min-height:50rem;
+        margin-bottom: 2rem;
+    }
+}
+@media (max-width :54.3rem) {
+    html {
+        font-size:40%;
+    }
+    .hero-section{
+        min-height:50rem;
+    }
+    .temp{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+    }
+    #sidebar {
+        font-size:3rem;
+    }
+    .pulse-item{
+        font-size:rem;
+    }
+}
+@media (max-width:49.5rem) {
+    html{
+        font-size: 35%;
+    }
+    .item,#title {
+    font-size: 1.8rem;
+    }
+    .hcontent {
+    display:flex;
+    justify-content:space-evenly;
+    }
+    .footer{
+        margin-bottom:0;
+    }
+    .nav-side,.nav-center {
+        margin-top:1rem;
+    }
+   
+
+   
+}
+@media (max-width:46rem) {
+    html {
+        font-size:30%
+    }
+    body {
+        min-height:100vh;
+        font-size:5rem;
+    }
+ 
+    .footer{
+        margin-bottom:0rem;
+        min-height: 10rem;
+        padding-bottom: 3rem;
+        margin-top:11rem;
+    }
+    #copyright {
+        font-size:3rem;
+    }
+    .gallery-img {
+    height:auto;
+    }
+    .footer-row {
+        display:grid;
+        grid-template-columns: 1fr 1fr;
+    }
+    #footer-title{
+        font-size:4rem;
+    }
+    .item {
+    font-size: 2rem;
+    }
+    #title {
+        font-size:1.5rem;
+        font-weight:750;
+    }
+    #sidebar {
+        font-size:3.3rem;
+        
+    }
+    .pulse-item{
+        font-size:3rem;
+    }
+    #fcontent{
+        font-size: 2.5rem;
+    }
+    .fb-icon,.x-icon,.insta-icon {
+    height:4rem;
+    width:4rem; 
+    }
+    #activities {
+        font-size:5rem;
+    } 
+    #g {
+        font-size:3rem;
+    }
+    .sidebarc {
+        font-size:2.5rem;
+    }
+    #title {
+        font-size:2rem;
+    }
+   
+}
+@media (max-width :42.7rem) {
+    html {
+        font-size:28%;
+    }
+    .footer{
+        min-height:5rem;
+        padding-bottom:2rem;
+    }
+    .hero-section {
+        min-height: 80rem;
+    }
+    .gallery-container {
+        display:grid;
+        gap: 1rem;
+        padding: 1rem 2%;
+        grid-template-columns:1fr 1fr;
+        grid-template-rows: 35rem, 35rem;
+    
+    }
+    #g {
+        padding-top: 10rem;
+        font-size: 3rem;
+    }
+     .sidebarcontent {
+        font-size :3rem;
+     }
+     #btn,#email {
+        font-size: 2rem;
+        margin-right:-2rem;
+     }
+    .pulse-item p#h, 
+    .pulse-item p#p, 
+    .pulse-item p#r {
+        font-size: 6rem;
+    }
+    .cave-icon {
+        width:8rem;
+        height:8rem;
+        min-width:8rem;
+        min-height:8rem;
+        display: block;
+    }
+     
+   
+    .gallery-img {
+        width :100%;
+        height: 100%;
+        object-fit: cover;
+        border-radius: 2rem;
+        cursor: pointer;
+        transition: all 0.5 ease;
+        
+    }
+    .gallery-img:hover {
+    transform: scale(1.25);
+    filter: brightness(1.1);
+    z-index: 2;
+    }
+    #copyright {
+        padding-bottom: 3rem;
+    }
+}
+@media (max-width:40rem) {
+    html {
+        font-size:26%;
+    }
+    .hcontent {
+        min-height:15rem
+    }
+}
+@media (max-width:37.5rem) {
+    html {
+        font-size:20%;
+    }
+    .item {
+        font-size: 2.2rem;
+    }
+    .hcontent{
+        min-height:25rem ;
+    }
+    
+    .gallery-img {
+        object-fit :cover;
+    }
+    
+}
+
+
+
+
+
+
+
+
+

@@ -3,15 +3,26 @@
     <head>
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <link rel="stylesheet" href="styles.css">
+         <link rel="stylesheet" href="queries.css">
     </head>
     <body>
-        <div class="hcontent">
-            <h2 class="item" id="a">Caves & Heritage</h2>
-            <h2 class="item" id="b" >Community</h2>
-            <h2 class="item" id="c">OGBUNIKE: THE CAVE TOWN</h2>
-            <h2 class="item" id="d">Festival</h2>
-            <h2 class="item" id="e">Culture</h2>
-            <h2 class="item" id="f">Visit</h2>
+        <div class="hcontent">        
+            <header class="navbar-main">
+                <div class="nav-side">
+                    <p class="item">Caves & Heritage</p>
+                    <p class="item">Community</p>
+                </div>
+
+                <div class="nav-center">
+                    <h2 id="title">OGBUNIKE: THE CAVE TOWN</h2>
+                </div>
+
+                <div class="nav-side">
+                    <p class="item">Festival</p>
+                    <p class="item">Culture</p>
+                    <p class="item">Visit</p>
+                </div>
+            </header>
         </div>
         <div class="hero-section">
             <div class="cave-container">
@@ -25,8 +36,8 @@
                 <div class="pulse-item">
                     <p id="h">🌥️</p>
                     <div id="k">
-                        <p>Weather</p>
-                        <p id="j">28°C, Humid & Cloudy</p>
+                        <p class="sidebarcontent">Weather</p>
+                        <p  class="sidebarcontent" id="j">28°C, Humid & Cloudy</p>
                     </div>
                 </div>
                 <div class="pulse-item">
@@ -34,22 +45,22 @@
                      <path d="M2 22L6 10C7 7 10 4 12 4C14 4 17 7 18 10L22 22H17L16 14C15.5 12 14 10 12 10C10 10 8.5 12 8 14L7 22H2Z"/>
                     </svg>
                     <div id="m">
-                        <p>Cave Status</p>
-                        <p id="n">Open (Guide Required)</p>
+                        <p class="sidebarcontent">Cave Status</p>
+                        <p class="sidebarcontent" id="n">Open (Guide Required)</p>
                     </div>     
                 </div>
                 <div class="pulse-item"> 
-                    <p id="p">📆</p>
+                    <p  class="sidebarcontent" id="p">📆</p>
                     <div>
-                        <p>Festival Info</p>
-                        <p id="q">Ime Ogba Festival- Coming Soon</p>
+                        <p  class="sidebarcontent">Festival Info</p>
+                        <p  class="sidebarcontent" id="q">Ime Ogba Festival- Coming Soon</p>
                     </div>
                 </div>
                 <div class="pulse-item">
-                    <p id="r">🥾</p>
+                    <p  class="sidebarcontent" id="r">🥾</p>
                     <div>
-                        <p>Local Tip</p>
-                        <p id="s">Remove shoes at holy entrance</p>
+                        <p  class="sidebarcontent">Local Tip</p>
+                        <p  class="sidebarcontent" id="s">Remove shoes at holy entrance</p>
                     </div>
                 </div>
             </div>
@@ -65,18 +76,18 @@
             
                 <div class="footer-row">
                     <div class="footer-col">
-                        <h3>Contact Us</h3>
-                        <p>Location: Ifite Road, Ogbunike,<br>Oyi L.G.A, Anambra State, Nigeria.</p>
-                        <p>Phone:+2341234567890</p>
+                        <h3 id="footer-title">Contact Us</h3>
+                        <p id="fcontent" >Location: Ifite Road, Ogbunike,<br>Oyi L.G.A, Anambra State, Nigeria.</p>
+                        <p id="fcontent">Phone:+2341234567890</p>
                     </div>
                     <div class="footer-col">
-                        <h3>Quick Links</h3>
-                        <p>Home Community</p>
-                        <p>Caves Festival</p>
-                        <p>Festival Visit</p>
+                        <h3 id="footer-title">Quick Links</h3>
+                        <p id="fcontent">Home Community</p>
+                        <p id="fcontent">Caves Festival</p>
+                        <p id="fcontent">Festival Visit</p>
                     </div>
                         <div class="footer-col">
-                        <h3>Follow Us</h3>
+                        <h3 id="footer-title">Follow Us</h3>
                         <svg class="fb-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" role="img" aria-label="Facebook Logo">
                             <path d="M504 256C504 119 393 8 256 8S8 119 8 256c0 123.78 90.69 226.38 209.25 245V327.69h-63V256h63v-54.64c0-62.15 37-96.48 93.67-96.48 27.14 0 55.52 4.84 55.52 4.84v61h-31.28c-30.8 0-40.41 19.12-40.41 38.73V256h68.78l-11 71.69h-57.78V501C413.31 482.38 504 379.78 504 256z"/>
                         </svg>
@@ -88,7 +99,7 @@
                         </svg>
                     </div>
                     <div class="footer-col">
-                        <h3>Newsletter</h3>
+                        <h3 id="footer-title">Newsletter</h3>
                         <input id="email" type="text" placeholder="Enter email"/>
                         <button id="btn">Sign Up</button>
                     </div>
@@ -97,3 +108,4 @@
             <p id="copyright">@2025 Ogbunike Cave Town. All Rights Reserved</p>
         </footer>
         
+  
