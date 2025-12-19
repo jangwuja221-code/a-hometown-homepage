@@ -236,16 +236,50 @@
         font-size:20%;
     }
     .item {
-        font-size: 2.2rem;
+        font-size: 1.8rem;
     }
     .hcontent{
-        min-height:25rem ;
+        min-height:18rem;
+        min-width:21rem ;
     }
     
     .gallery-img {
         object-fit :cover;
     }
     
+}
+@media (max-width:31rem) {
+    .nav-side:last-child,.nav-side:first-child {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 0.5rem;
+    }
+.nav-center {
+    justify-content: center;
+    align-items: center;
+}
+
+.nav-center h2 {
+    font-size: 1.4rem;
+    white-space: normal;       /* Allows wrapping */
+    text-align: center;
+    line-height: 1.2;
+    margin: 0;
+    
+    /* THE TRICK: Set a max-width that is too small for one line 
+       but wide enough for "THE CAVE TOWN" */
+    max-width:13rem; 
+    
+    /* Ensures the browser breaks at the space after the colon */
+    word-break: keep-all; 
+    }
+    .item{
+        font-size:2.3rem;
+    }
+    #title {
+        font-size:2.5rem;
+    }
 }
 
 
