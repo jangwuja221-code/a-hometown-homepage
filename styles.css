@@ -11,6 +11,10 @@ body{
 html {
     font-size:62.5%;
 }
+html, body {
+  overflow-x: hidden;
+  position: relative;
+}
 
 
 .hcontent {
