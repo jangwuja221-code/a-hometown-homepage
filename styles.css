@@ -3,7 +3,7 @@ body{
     background-color:#24421D;
     color:#f5ebe0; 
     font-family: 'Montserrat', sans-serif; 
-    min-height:100vh;
+    min-height:100dvh;
     display: flex;
     flex-direction: column;
 }     
