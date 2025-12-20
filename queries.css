@@ -234,6 +234,13 @@
     .pulse-item p#r {
         font-size: 6rem;
     }
+    .cave-icon {
+        width:8rem;
+        height:8rem;
+        min-width:8rem;
+        min-height:8rem;
+        display: block;
+    }
 
     
     .footer{
