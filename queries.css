@@ -139,6 +139,9 @@
      #btn,#email {
         font-size: 2rem;
      }
+     #email {
+        margin-right:-3rem;
+     }
 
     .gallery-img {
         width :100%;
