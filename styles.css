@@ -68,9 +68,6 @@ html, body {
     cursor: pointer;
 }
 
-
-
-
 .cave-container {
     flex: 2;
     min-width: 30rem;
@@ -85,6 +82,7 @@ html, body {
     display: flex;
     flex-direction: row;
     padding: 2rem;
+    min-height: 20rem;
 }
 
 
@@ -215,7 +213,7 @@ html, body {
     margin-top:0.5rem;
 }
 .sidebarcontent {
-    font-size :3rem;
+    font-size :2rem;
 }
 .cave-icon {
     width: 5rem;
@@ -235,8 +233,7 @@ p {
 /* Container */
 .gallery-container {
     display: flex;
-    flex-wrap: wrap;
-    height: auto; 
+    flex-direction: row; 
     min-height: 35rem;
     gap: 1rem; /* Space between images */
     padding: 0 1rem;

@@ -95,56 +95,77 @@
         margin-top:1rem;
     }
 }
-   
-
-@media (max-width:48rem) {
+@media (max-width: 48rem) {
     html {
-        font-size:33%;
+        font-size: 35%;
     }
+
+    /* FIX 1: Force stacking so text isn't squashed side-by-side */
+    .hero-section {
+        display: flex;
+        flex-direction: column; 
+        min-height: auto; 
+        padding: 2rem;
+        gap: 2rem;
+    }
+
+    /* FIX 2: Let the image and sidebar take full width */
+    .cave-container {
+        width: 100%;
+        min-width: 100%; 
+        margin-right: 0;
+        height: 40rem; /* Controlled height for mobile */
+    }
+    .cave-container {
+        padding-bottom:20rem; /* Maintain aspect ratio */
+    }
+    .cave-icon {
+        width: 8rem;
+        height:8rem;
+    }
+  
+  
+
+    .temp {
+        width: 100%;
+        min-width: 100%;
+        padding-left: 0;
+        display: flex;
+        flex-direction: column;
+        gap: 1.5rem;
+    }
+
+    /* FIX 3: Text and Icon Alignment */
+    .pulse-item {
+        justify-content: flex-start;
+        padding: 1.5rem;
+    }
+
     .pulse-item p#h, 
     .pulse-item p#p, 
     .pulse-item p#r {
         font-size: 6rem;
+        margin: 0 2rem 0 0; /* Proper spacing for mobile */
     }
-    .cave-icon {
-        min-width:8rem;
-        min-height:8rem;
-        display: block;
+ 
+
+    .sidebarcontent {
+        font-size: 3rem;
+        line-height: 1.4; /* Improves readability of wrapped text */
     }
-    
-    .footer{
-        min-height:5rem;
-        padding-bottom:2rem;
-    }
-    .hero-section {
-        min-height: 50rem;
-    }
-    .gallery-container {
+
+    /* FIX 4: Gallery Grid Reset */
+ .gallery-container {
         display:grid;
         gap: 1rem;
         padding: 1rem 2%;
         grid-template-columns:1fr 1fr;
         grid-template-rows: 35rem, 35rem;
-    
     }
-    #g {
-        padding-top: 10rem;
-        font-size: 3rem;
-    }
-     .sidebarcontent {
-        font-size :3rem;
-     }
-     #btn,#email {
-        font-size: 2rem;
-     }
-     #email {
-        margin-right:-3rem;
-     }
 
     .gallery-img {
         width :100%;
         height: 100%;
-        object-fit: cover;
         border-radius: 2rem;
         cursor: pointer;
         transition: all 0.5 ease;
@@ -155,13 +176,9 @@
     filter: brightness(1.1);
     z-index: 2;
     }
-    #copyright {
-        padding-bottom: 3rem;
-    }
 }
    
 
-   
 
 @media (max-width:46rem) {
     html {
@@ -181,9 +198,8 @@
     #copyright {
         font-size:3rem;
     }
-    .gallery-img {
-    height:auto;
-    }
+   
+    
     .footer-row {
         display:grid;
         grid-template-columns: 1fr 1fr;
@@ -287,7 +303,7 @@
 }
 @media (max-width:40rem) {
     html {
-        font-size:26%;
+        font-size:30%;
     }
     .hcontent {
         min-height:10rem
