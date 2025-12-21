@@ -85,7 +85,7 @@ html, body {
 }
 .hero-section {
     display: flex;
-    flex-wrap: wrap;
+    flex-direction: row;
     padding: 2rem;
 }
 
@@ -186,9 +186,7 @@ html, body {
     text-shadow: 0 0 5px rgba(0,0,0,0.5);
        
 }
-.hero-section{
-    display:flex;
-}
+
 .temp {
     flex: 1; /* Takes up 1 part of width */
     min-width: 25rem;
@@ -548,3 +546,5 @@ p {
 #copyright:hover::after {
     width: 100%; /* Now "100%" means "100% of the text", not the screen */
 }
+        
+  
