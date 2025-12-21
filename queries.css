@@ -79,7 +79,7 @@
 }
 @media (max-width:49.5rem) {
     html{
-        font-size: 35%;
+        font-size: 40%;
     }
     .item,#title {
     font-size: 1.8rem;
@@ -97,7 +97,7 @@
 }
 @media (max-width: 48rem) {
     html {
-        font-size: 35%;
+        font-size: 40%;
     }
 
     /* FIX 1: Force stacking so text isn't squashed side-by-side */
@@ -119,10 +119,7 @@
     .cave-container {
         padding-bottom:20rem; /* Maintain aspect ratio */
     }
-    .cave-icon {
-        width: 8rem;
-        height:8rem;
-    }
+  
   
   
 
@@ -190,12 +187,9 @@
         min-height:8rem;
     }
 }
-   
-
-
 @media (max-width:46rem) {
     html {
-        font-size:30%
+        font-size:40%
     }
     body {
         min-height:100dvh;
@@ -255,7 +249,7 @@
 }
 @media (max-width:43rem) {
     html {
-        font-size:28%;
+        font-size:40%;
     }
     .pulse-item p#h, 
     .pulse-item p#p, 
@@ -326,7 +320,7 @@
 }
 @media (max-width:40rem) {
     html {
-        font-size:30%;
+        font-size:40%;
     }
     .hcontent {
         min-height:10rem
@@ -334,7 +328,7 @@
 }
 @media (max-width:37.5rem) {
     html {
-        font-size:20%;
+        font-size:40%;
     }
     .item {
         font-size: 1.8rem;
@@ -351,7 +345,7 @@
 }
 @media (max-width:31rem) {
     html {
-        font-size:18% ;
+        font-size:40% ;
     }
     .nav-side:last-child,.nav-side:first-child {
     display: flex;
@@ -385,11 +379,6 @@
         font-size:2.5rem;
     }
 }
-@media (max-width:26rem) {
-    html {
-        font-size :14%; 
-    }
-}
 
 
 
@@ -398,5 +387,10 @@
 
 
 
+
+
+
+
+   
 
 
