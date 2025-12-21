@@ -40,7 +40,7 @@
         margin-top:auto;
     }
     .hcontent {
-        min-height:15rem;
+        min-height:13rem;
     }
     .nav-side, .nav-center {
     display: flex;
@@ -107,8 +107,6 @@
         font-size: 6rem;
     }
     .cave-icon {
-        width:8rem;
-        height:8rem;
         min-width:8rem;
         min-height:8rem;
         display: block;
@@ -119,7 +117,7 @@
         padding-bottom:2rem;
     }
     .hero-section {
-        min-height: 80rem;
+        min-height: 50rem;
     }
     .gallery-container {
         display:grid;
@@ -238,8 +236,6 @@
         font-size: 6rem;
     }
     .cave-icon {
-        width:8rem;
-        height:8rem;
         min-width:8rem;
         min-height:8rem;
         display: block;
@@ -251,7 +247,7 @@
         padding-bottom:2rem;
     }
     .hero-section {
-        min-height: 80rem;
+        min-height: 50rem;
     }
     .gallery-container {
         display:grid;
@@ -294,7 +290,7 @@
         font-size:26%;
     }
     .hcontent {
-        min-height:15rem
+        min-height:10rem
     }
 }
 @media (max-width:37.5rem) {
@@ -305,7 +301,7 @@
         font-size: 1.8rem;
     }
     .hcontent{
-        min-height:18rem;
+        min-height:10rem;
         min-width:21rem ;
     }
     

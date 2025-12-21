@@ -4,8 +4,7 @@ body{
     color:#f5ebe0; 
     font-family: 'Montserrat', sans-serif; 
     min-height:100dvh;
-    display: flex;
-    flex-direction: column;
+
 }     
 
 html {
@@ -21,8 +20,7 @@ html, body {
     background-image: url("images/h1image.png");
     color: #f5ebe0;
     width: 100%;
-    min-height:5rem;
-    
+    min-height:2rem;
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
@@ -215,6 +213,9 @@ html, body {
 }
 #k {
     margin-top:0.5rem;
+}
+.sidebarcontent {
+    font-size :3rem;
 }
 .cave-icon {
     width: 5rem;
