@@ -214,6 +214,7 @@ html, body {
 }
 .sidebarcontent {
     font-size :2rem;
+    line-height: 1.4; 
 }
 .cave-icon {
     width: 5rem;
