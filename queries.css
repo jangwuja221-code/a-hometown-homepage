@@ -147,6 +147,15 @@
         font-size: 6rem;
         margin: 0 2rem 0 0; /* Proper spacing for mobile */
     }
+    .temp {
+        width: 100%;
+        min-width: 100%; /* Overrides the 25rem in styles.css */
+        padding-left: 0;
+        margin-top: 2rem;
+        display: flex;
+        flex-direction: column;
+        gap: 1.5rem;
+    }
  
 
     .sidebarcontent {
@@ -172,9 +181,13 @@
         
     }
     .gallery-img:hover {
-    transform: scale(1.25);
-    filter: brightness(1.1);
-    z-index: 2;
+        transform: scale(1.25);
+        filter: brightness(1.1);
+        z-index: 2;
+    }
+    .cave-icon {
+        min-width:8rem;
+        min-height:8rem;
     }
 }
    
@@ -300,6 +313,15 @@
     }
     #copyright {
         padding-bottom: 3rem;
+    }
+    .temp {
+        width: 100%;
+        min-width: 100%; /* Overrides the 25rem in styles.css */
+        padding-left: 0;
+        margin-top: 2rem;
+        display: flex;
+        flex-direction: column;
+        gap: 1.5rem;
     }
 }
 @media (max-width:40rem) {
