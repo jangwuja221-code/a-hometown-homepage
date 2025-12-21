@@ -234,9 +234,7 @@
     #g {
         font-size:3rem;
     }
-    .sidebarc {
-        font-size:2.5rem;
-    }
+  
     #title {
         font-size:2rem;
     }
@@ -254,7 +252,9 @@
     .cave-icon {
         min-width:8rem;
         min-height:8rem;
-        display: block;
+    }
+    .hcontent {
+        min-height :11rem;
     }
 
     
@@ -279,6 +279,7 @@
     }
      .sidebarcontent {
         font-size :3rem;
+        line-height:1.4 ;
      }
      #btn,#email {
         font-size: 2rem;
