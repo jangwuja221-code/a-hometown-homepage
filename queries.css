@@ -39,13 +39,12 @@
         padding-bottom: 2rem;
         margin-top:auto;
     }
-    .hcontent {
-        min-height:13rem;
-    }
+   
+  
     .nav-side, .nav-center {
     display: flex;
     justify-content: center;
-    margin-top: 4rem; 
+    margin-top: 1rem; 
     }
     
     .item {
@@ -79,7 +78,7 @@
 }
 @media (max-width:49.5rem) {
     html{
-        font-size: 40%;
+        font-size: 37%;
     }
     .item,#title {
     font-size: 1.8rem;
@@ -119,6 +118,9 @@
     .cave-container {
         padding-bottom:20rem; /* Maintain aspect ratio */
     }
+    .hcontent{
+        min-height: 6rem;
+    }
   
   
   
@@ -137,6 +139,9 @@
         justify-content: flex-start;
         padding: 1.5rem;
     }
+    #fcontent{
+        font-size: 2rem;
+    }
 
     .pulse-item p#h, 
     .pulse-item p#p, 
@@ -153,6 +158,35 @@
         flex-direction: column;
         gap: 1.5rem;
     }
+    .nav-side:last-child,.nav-side:first-child {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 0.5rem;
+    }
+    .nav-center {
+        justify-content: center;
+        align-items: center;
+    }
+
+    .nav-center h2 {
+        font-size: 1.4rem;
+        white-space: normal;       /* Allows wrapping */
+        text-align: center;
+        line-height: 1.2;
+        margin: 0;
+        
+    /* THE TRICK: Set a max-width that is too small for one line 
+       but wide enough for "THE CAVE TOWN" */
+        max-width:13rem; 
+        
+        /* Ensures the browser breaks at the space after the colon */
+        word-break: keep-all; 
+    }
+    .cave-icon {
+        min-width:6rem;
+        min-height:6rem;
+    }
  
 
     .sidebarcontent {
@@ -161,12 +195,12 @@
     }
 
     /* FIX 4: Gallery Grid Reset */
- .gallery-container {
+    .gallery-container {
         display:grid;
         gap: 1rem;
         padding: 1rem 2%;
         grid-template-columns:1fr 1fr;
-        grid-template-rows: 35rem, 35rem;
+        grid-template-rows: auto;
     }
 
     .gallery-img {
@@ -175,16 +209,20 @@
         border-radius: 2rem;
         cursor: pointer;
         transition: all 0.5 ease;
-        
+        min-height: 35rem;
+        min-width: 35rem;
     }
     .gallery-img:hover {
         transform: scale(1.25);
         filter: brightness(1.1);
         z-index: 2;
     }
-    .cave-icon {
-        min-width:8rem;
-        min-height:8rem;
+    #btn,#email {
+        font-size: 1.5rem;
+    }
+    .footer-row {
+        display:grid;
+        grid-template-columns: 1fr 1fr;
     }
 }
 @media (max-width:46rem) {
@@ -245,6 +283,13 @@
     #title {
         font-size:2rem;
     }
+    .hcontent {
+        min-height :7rem;
+    }
+    #btn {
+        margin-left: -5rem;
+    }
+    
    
 }
 @media (max-width:43rem) {
@@ -261,7 +306,7 @@
         min-height:8rem;
     }
     .hcontent {
-        min-height :11rem;
+        min-height :7rem;
     }
 
     
@@ -343,42 +388,30 @@
     }
     
 }
-@media (max-width:31rem) {
-    html {
-        font-size:40% ;
-    }
-    .nav-side:last-child,.nav-side:first-child {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    gap: 0.5rem;
-    }
-.nav-center {
-    justify-content: center;
-    align-items: center;
-}
 
-.nav-center h2 {
-    font-size: 1.4rem;
-    white-space: normal;       /* Allows wrapping */
-    text-align: center;
-    line-height: 1.2;
-    margin: 0;
-    
-    /* THE TRICK: Set a max-width that is too small for one line 
-       but wide enough for "THE CAVE TOWN" */
-    max-width:13rem; 
-    
-    /* Ensures the browser breaks at the space after the colon */
-    word-break: keep-all; 
+
+@media (max-width:29rem) {
+    #footer-title {
+        font-size:3rem;
+    }
+    #fcontent{
+        font-size: 2rem;
+    }
+    #email {
+        margin-right: -5rem;
+    }
+    #copyright,#title {
+        font-size: 2rem;
     }
     .item{
-        font-size:2.3rem;
+        font-size:1.5rem;
     }
-    #title {
-        font-size:2.5rem;
+    .hcontent {
+        min-height :4rem;
     }
+
 }
+
 
 
 
