@@ -303,6 +303,10 @@ p {
     background-color: #C49A6C;
     margin-left: -0.5rem;
     border:1.3px solid #C49A6C;
+    -webkit-appearance: none;
+    appearance: none;
+    color:#f5ebe0; 
+    padding-bottom: 0.15rem;  
 }
 
 .hero-title {
