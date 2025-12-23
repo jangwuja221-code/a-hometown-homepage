@@ -1,3 +1,4 @@
+
 body{
     margin: 0rem;
     background-color:#24421D;
@@ -11,7 +12,7 @@ html {
     font-size:62.5%;
 }
 html, body {
-  overflow-x: hidden;
+  overflow-x:hidden;
   position: relative;
 }
 
@@ -288,6 +289,7 @@ p {
     padding: 1rem;
     transition: all 0.4s ease;
 }
+
 .fb-icon,.x-icon,.insta-icon {
     height:3rem;
     width:3rem;

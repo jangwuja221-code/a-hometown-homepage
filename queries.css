@@ -394,11 +394,13 @@
     #footer-title {
         font-size:3rem;
     }
+
     #fcontent{
         font-size: 2rem;
     }
     #email {
-        margin-right: -5rem;
+        margin-right: -3rem;
+        font-size: 1.5rem;
     }
     #copyright,#title {
         font-size: 2rem;
@@ -408,6 +410,17 @@
     }
     .hcontent {
         min-height :4rem;
+    }
+    .gallery-img{
+        min-height:25rem;
+        min-width: 25rem;
+    }
+    .gallery-img img{
+        object-fit: cover;
+        max-width: 100%;
+    }
+    #btn {
+        font-size: 1.5rem;
     }
 
 }
