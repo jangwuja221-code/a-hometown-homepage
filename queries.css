@@ -78,7 +78,7 @@
 }
 @media (max-width:49.5rem) {
     html{
-        font-size: 37%;
+        font-size: 40%;
     }
     .item,#title {
     font-size: 1.8rem;
@@ -96,7 +96,7 @@
 }
 @media (max-width: 48rem) {
     html {
-        font-size: 30%;
+        font-size: 40%;
     }
 
     /* FIX 1: Force stacking so text isn't squashed side-by-side */
@@ -227,7 +227,7 @@
 }
 @media (max-width:46rem) {
     html {
-        font-size:28%
+        font-size:40%
     }
     body {
         min-height:100dvh;
@@ -294,7 +294,7 @@
 }
 @media (max-width:43rem) {
     html {
-        font-size:25%;
+        font-size:40%;
     }
     .pulse-item p#h, 
     .pulse-item p#p, 
@@ -366,7 +366,7 @@
 }
 @media (max-width:40rem) {
     html {
-        font-size:30%;
+        font-size:40%;
     }
     .hcontent {
         min-height:10rem
@@ -374,7 +374,7 @@
 }
 @media (max-width:37.5rem) {
     html {
-        font-size:25%;
+        font-size:40%;
     }
     .item {
         font-size: 1.8rem;
