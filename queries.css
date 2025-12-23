@@ -302,12 +302,13 @@
         font-size: 6rem;
     }
     .cave-icon {
-        min-width:8rem;
-        min-height:8rem;
+        min-width:6rem;
+        min-height:6rem;
     }
     .hcontent {
         min-height :7rem;
     }
+
 
     
     .footer{
@@ -399,7 +400,7 @@
         font-size: 2rem;
     }
     #email {
-        margin-right: -3rem;
+        margin-right: -2rem;
         font-size: 1.5rem;
     }
     #copyright,#title {
@@ -421,6 +422,9 @@
     }
     #btn {
         font-size: 1.5rem;
+    }
+    #g {
+        font-size: 1.6rem;
     }
 
 }
